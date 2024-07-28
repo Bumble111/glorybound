@@ -1,0 +1,128 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+@font-face {
+  font-family: Archivo;
+  src: url("./Archivo\ Expanded\ Bold.ttf");
+}
+
+body {
+  background-color: #e1ddda;
+}
+
+.rectangle {
+  background-color: #c2c1bf;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 35%;
+  z-index: -1;
+  max-height: 500px;
+}
+
+nav {
+  padding: 20px 0;
+  width: 100vw;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+nav img {
+  margin: 0 10px 0 20px;
+  width: 30px;
+}
+
+nav span {
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+}
+
+h1 {
+  margin: 0;
+  font-family: "Archivo", sans-serif;
+  font-size: 4rem;
+  color: #000000;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.6), 0 0 2px rgba(0, 0, 0, 0.7);
+  word-spacing: 16px;
+}
+
+h1 span {
+  margin: 0;
+  font-family: "Archivo", sans-serif;
+  font-size: 4rem;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.6), 0 0 2px rgba(0, 0, 0, 0.7);
+  word-spacing: 16px;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #000;
+  text-shadow: 0 0 40px #ffffff, 0 0 30px #ffffff, 0 0 20px #ffffff;
+}
+
+.container {
+  height: calc(100vh - 80px);
+  width: 100%;
+  background: url("");
+  background-size: cover;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  height: auto;
+  display: table;
+}
+
+.content {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.item {
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+  padding: 8px;
+}
+
+@media screen and (max-width: 800px) {
+  .rectangle {
+    display: none;
+  }
+  h1 {
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.6), 0 0 2px rgba(0, 0, 0, 0.7);
+    font-size: 3rem !important;
+  }
+  h1 span {
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.6), 0 0 2px rgba(0, 0, 0, 0.7);
+    font-size: 3rem !important;
+  }
+  p {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .rectangle {
+    display: none;
+  }
+  h1 {
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.6), 0 0 2px rgba(0, 0, 0, 0.7);
+    font-size: 2rem !important;
+  }
+  h1 span {
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.6), 0 0 2px rgba(0, 0, 0, 0.7);
+    font-size: 2rem !important;
+  }
+  p {
+    font-size: 1rem;
+  }
+}
